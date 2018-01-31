@@ -1,0 +1,295 @@
+Structuur van de pagina.
+Boven aan zijn de elementen die algemeen voor alle pagina's van toepassing zou hebben.
+verder eronder heb ik op basis van de telefoon design de code gedefineerd. Wat je als 
+eerst op een de mobiele website zal zien, zie je boven aan in de css code te staan. 
+Er onder zijn de andere formaten en aanpassingen.
+
+/* Achtergrond van de hele pagina + het lettertype*/
+html {
+    background-color: #00d66c;
+    font-family: "Nexa bold";
+}
+
+/*Zorgt ervoor dat er geen ruimte om de body zit */
+body {
+    margin: 0;
+}
+
+/* Afmeting en de positie van de titel*/
+h1 {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+/* Afmeting en de posite van de titel */
+h2 {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+/* Letterg grote van paragraaf tekst*/
+p {
+    font-family: "nexa light";
+    font-size: 1em;
+    margin-top: 2%;
+}
+
+
+/* Het menu zit in de header met een witte achtergrond en zet de img en de tekst naast elkaar*/
+
+header nav {
+    background-color: white;
+    display: flex;
+}
+
+
+/* Zet de menu items naast elkaar met ruimte er tussen de img*/
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: 1em;
+}
+
+
+/*Ruimte tussen de menu items */
+
+nav ul li {
+    margin-left: 5%;
+}
+
+
+/* De grote van het logo in de header en de positie ervan */
+
+nav img {
+    margin-left: 1%;
+    width: 25%;
+}
+
+
+/* De kleur van de menu items */
+
+nav a {
+    color: #00d66c;
+    font-size: 0.8em;
+}
+
+
+/*Geen streep onder de links */
+
+nav a:link {
+    text-decoration: none;
+}
+
+
+/* De kleur die de gebruiker ziet als hij met zijn muis over een menu item gaat */
+
+a:hover {
+    color: #2c2f85;
+}
+
+
+/*Lettertyp grote van de titels van de formulieren */
+
+legend {
+    font-size: 1.3em;
+}
+
+
+/* Afmeting van het formulieren inloggen en stijling*/
+
+.inloggen {
+    background-color: white;
+    border: none;
+    border-radius: .5em;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 84%;
+}
+
+
+/*Afmeting van het formulier aanmelden en stijling */
+
+.aanmelden {
+    background-color: white;
+    border: none;
+    border-radius: .5em;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+/* afmeting en positie van de input */
+
+form input {
+    border-radius: .5rem;
+    display: flex;
+    font-size: 1rem;
+    padding-bottom: 0.4em;
+    width: 80%
+}
+
+
+/* de labels van het formulier worden gestapeld en ruimte tussen de elementen */
+
+form label {
+    display: block;
+    margin-bottom: 2em;
+}
+
+
+/* Als de gebruiker een veld nog niet heeft ingevuld is de border rood*/
+
+input:invalid {
+    border-color: red;
+}
+
+
+/* Als de balk goed is ingevuld word de input groen, zodat de geruiker feedback krijg. zodat ze niks vergeten in te vullen */
+
+input:valid {
+    background-color: #73ea86;
+}
+
+
+/* Als de gebruiker op een input drukt word het iets groter zodat de gebruiker weet dat hij/zij erop gedrukt heeft*/
+
+input:focus {
+    transform: scale(1.05, 1.05);
+}
+
+
+/* Afmetingen en possitie van de button */
+
+.button {
+    background-color: #ff3268;
+    border-radius: 1.5rem;
+    box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+    color: white;
+    font-family: "Nexa bold";
+    font-size: 90%;
+    margin-bottom: 6%;
+    margin-left: 30%;
+    padding: .4375em 1.5em .5625em;
+}
+
+
+/* Design TABLET formaat*/
+@media (max-device-width: 48em) and (min-device-width: 37.5em) {
+    p {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    nav a {
+        color: #00d66c;
+        font-size: 1.3em;
+    }
+    nav ul {
+        margin-left: 10em;
+    }
+    .h1 {
+        font-size: 2em;
+    }
+    .h2 {
+        font-size: 2em;
+    }
+    form input {
+        border-radius: .5rem;
+        display: flex;
+        font-size: 1rem;
+        padding-bottom: 0.4em;
+        width: 50%
+    }
+    .button {
+        background-color: #ff3268;
+        border-radius: 1.5rem;
+        box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+        color: white;
+        font-family: "Nexa bold";
+        font-size: 1.3em;
+        height: 20%;
+        margin-left: 40%;
+        width: 25%;
+    }
+    form label {
+        display: block;
+        font-size: 1.3em;
+        margin-bottom: 2em;
+        margin-left: 4em;
+    }
+}
+
+
+/* Design DESKTOP formaat */
+@media (min-device-width: 48.1em) {
+      p {
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+        font-size: 1em;
+        list-style: none;
+    }
+    nav ul li {
+        font-size: 1.3em;
+        margin-left: 8%;
+    }
+    nav ul {
+        display: flex;
+        font-size: 1em;
+        list-style: none;
+        margin-left: 60%;
+    }
+    nav img {
+        margin-left: 1%;
+        width: 10%;
+    }
+    .aanmelden {
+        border-radius: .5em;
+        margin-left: 50%;
+        margin-right: 5%;
+        margin-top: 2%;
+        position: relative;
+        width: 40%;
+    }
+    fieldset {
+        background-color: white;
+        border: none;
+        border-radius: .5em;
+        margin-left: 50%;
+        position: absolute;
+        width: 45%;
+    }
+    .inloggen {
+        margin-top: 2%;
+        position: absolute;
+        width: 40%;
+    }
+    form input {
+        border: .0925rem solid #91a3b7;
+        border-radius: .5rem;
+        display: flex;
+        font-size: 1rem;
+        padding-bottom: 0.4em;
+        width: 55%;
+    }
+    .button {
+        background-color: #ff3268;
+        border-radius: 1.5rem;
+        box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+        color: white;
+        font-family: "Nexa bold";
+        font-size: 90%;
+        margin-bottom: 6%;
+        margin-left: 40%;
+        padding: .4375em 1.5em .5625em;
+    }
+
+     form label {
+        display: block;
+        margin-bottom: 2em;
+        margin-left: 4em;
+    }
+}
