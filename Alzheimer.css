@@ -1,0 +1,178 @@
+Structuur van het verhaal Alzheimer 
+Het begint bij het menu het eerst wat je bovenaan de website ziet
+Daar onder heb ik de 3 afbeeldingen op het mobiele website
+onder die codes zijn de tablet en desktop formaten
+
+
+/* Zorgt er voor dat er geen ruimte aan de zijkant is */
+body {
+        margin: 0;
+        padding: 0;
+    }
+
+/* Het menu die naast het elkaar word gezet, met de lettertype van Transavia*/
+    nav>ul {
+        display: flex;
+        font-family: "Nexa Bold";
+    }
+
+/* De ruimte tussen de menu items*/
+    nav>ul>li {
+        font-size: .8em;
+        margin: 1.5%;
+        margin-top: 1%;
+
+    }
+
+/* Afbeelding grote van het logo die in de header is*/
+    header img {
+        margin-left: 1%;
+        width: 30%;
+    }
+
+/* De kleur van de items in het menu, groen*/
+    nav a {
+        color: #00d66c;
+    }
+/* Link zonder streep er onder*/
+    nav a:link {
+        text-decoration: none;
+    }
+/* De kleut die de gebruiker zie als ze men hun muis over een van de menu items/links hovert*/
+    a:hover {
+        color: #2c2f85;
+    }
+
+/* De kleur en positie  van de header, zorgt er voor dat de items in de header naast elkaar geplaats zijn */
+    header {
+        background-color: #ffffff;
+        display: flex;
+        height: 3em;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+/*De kleur en de positie van de progresbar*/
+    .progress-container {
+      background: #ccc;
+      height: 1em;
+      position: fixed;
+      top: 2.9em;
+      width: 100%;
+    }
+/*De kleur en de positie van de progresbar*/
+    .progress-bar {
+      background: #00d66c;
+      height: 1em;
+      width: 0;
+    }
+
+/* De positie van de afbeelding van het verhaal, aan de rechter kant*/
+    .kleurenhoofd {
+        margin: 104% 0 0 10%;
+        position: fixed;
+        right: 0;
+        width: 70%;
+    }
+
+/* Formaat van het artikel*/
+    .artikel {
+        padding-bottom: 20em;
+        padding-top: 3em;
+        width: 100%;
+    }
+
+
+/* De positie van de afbeelding van het verhaal, aan de linker kant*/
+    .zwarthoofd {
+        left: 0;
+        margin: 104% 20% 0 0;
+        position: fixed;
+        width: 70%;
+
+    }
+
+
+    /* Design TABLET formaat */
+    @media (max-device-width: 48em) and (min-device-width: 37.5em) {
+
+        header nav {
+            background-color: white;
+            display: flex;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin-left: 20%;
+        }
+        nav ul li {
+            font-family: "Nexa Bold";
+            font-size: 1.5em;
+            margin-left: 5%;
+        }
+        header img {
+            margin-left: 3%;
+            width: 25%
+        }
+
+        .kleurenhoofd {
+            margin: 54% 0 0 25%;
+            position: fixed;
+            width: 75%;
+        }
+        .artikel {
+            margin-left: 10%;
+            margin-right: 2%;
+            padding-bottom: 30em;
+            width: 85%;
+        }
+        .zwarthoofd {
+            left: 0;
+            margin: 54% 20% 0 0;
+            position: fixed;
+            width: 75%;
+        }
+
+    }
+
+    /* Design DESKTOP formaat */
+    @media (min-device-width: 48.1em) {
+
+        header nav {
+            background-color: white;
+            display: flex;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin-left: 260%;
+        }
+        nav ul li {
+            font-family: "Nexa Bold";
+            font-size: 1em;
+            margin-left: 5%;
+
+        }
+        header img {
+            margin-left: 3%;
+            width: 15%;
+        }
+            .kleurenhoofd {
+                margin: 12% 0 0 10%;
+                position: fixed;
+                right: 0;
+                width: 35%;
+            }
+            .artikel {
+                margin-left: 22.5%;
+                padding-bottom: 20em;
+                width: 55%;
+            }
+            .zwarthoofd {
+                left: 0;
+                margin: 12% 20% 0 0;
+                position: fixed;
+                width: 35%;
+            }
+        }
