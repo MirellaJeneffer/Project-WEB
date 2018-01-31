@@ -1,0 +1,76 @@
+Structuur van het aanmeld pagina
+Als eerst heb ik het inloggen in de HTML gedefineerd en daarna het aanmeld formulier
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aanmelden.css" />
+    <title>Aanmelden verhalen website</title>
+</head>
+
+<body>
+ <header>
+        <!-- In de header heb ik het menu geplaatst. Ik heb het menu in een lijst gezet zodat de menu items gegeroepeert zijn en samen gestijld kunnen worden in css -->
+        <nav>
+            <img class="logo" src="images/transavia-logo.svg" alt="transavia logo">
+            <ul>
+                <li><a href="#">Profiel</a></li>
+                <li><a href="overzichtspagina.html">Leesbundel</a></li>
+                <li><a href="aanmelden.html">Aanmelden</a></li>
+            </ul>
+        </nav>
+    </header>
+
+ <!-- Formulier om in te loggen-->
+            <form action="#">
+                <fieldset class="inloggen">
+                     <h1 class="h1"> Inloggen</h1>
+
+                    <label class="label">
+                        Emailadres
+                        <input type="text" name="email" required>
+                    </label>
+
+                    <label class="label">
+                        Wachtwoord
+                        <input type="text" name="wachtwoord" required>
+                    </label>
+                    <button class="button" type="submit"> Inloggen</button>
+                </fieldset>
+            </form>
+
+           
+ <!-- Formulier om aan te me melden -->
+            <fieldset class="aanmelden">
+             <form>
+              <h2 class="h2">Meld je aan voor de 99 verhalen </h2>
+                    <label>
+                        Naam
+                        <input type="text" name="naam" required>
+                    </label>
+                    <label>
+                    Geboortedatum
+                    <input type="date" name="date"></label>
+                    <label> Account naam
+                    <input type="text" name="accountnaam" required></label>
+                    <label>
+                        Emailadres
+                        <input type="email" name="email" required>
+                    </label>
+                    <label>
+                        Wachtwoord
+                        <input type="password" name="password" required>
+                    </label>
+
+                    <p> Je wachtwoord moet minimaal 8 tekens zijn. Hoe langer hoe beter!</p>
+                    <button class="button" type="submit"> Aanmelden
+                    </button>
+                </form>
+            </fieldset>
+
+</body>
+
+</html>
