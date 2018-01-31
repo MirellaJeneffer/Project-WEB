@@ -1,0 +1,255 @@
+Stuctuur van het verhaal toeristische route
+De structuur is het zelfde als van de website
+Wat boven aan de website is, is in mijn Css ook boven aan.
+Onder staan de formaten voor ipad en desktop
+
+
+
+/* Achtergrond kleur en positie van de header, die de elementen die er in zit naast elkaar zet door de flex */
+
+ header {
+     background-color: white;
+     display: block;
+     display: flex;
+     justify-content: space-between;
+     width: 90rem;
+ }
+ /* Positie dat de elementen van het menu naast elkaar komen*/
+
+ nav>ul {
+     display: flex;
+     font-size: 3em;
+     list-style: none;
+     width: 20em;
+ }
+ /* Ruimte tussen de elementen van het menu*/
+
+ nav>ul>li {
+     font-family: "Nexa Bold";
+     margin: 4%;
+     margin-top: 5%;
+ }
+ /* Logo in de header de positie er van de groote */
+
+ header img {
+     padding-left: 2%;
+     width: 25%;
+ }
+ /* De kleur van de menu items */
+
+ nav a {
+     color: #00d66c;
+ }
+ /* De lijn onder de link niet meer zichtbaar */
+
+ nav a:link {
+     text-decoration: none;
+ }
+ /* De de gebruiker met de muis over de elementen gaat word het deze kleur.*/
+
+ a:hover {
+     color: #2c2f85;
+ }
+/* de grote van de font kleur en type*/
+ h2 {
+     color: #48140d;
+     font-family: "1543HumaneJenson";
+     font-size: 5em;
+ }
+/*de grote van de font type en de spaties(verticaal) tussen regels*/
+ p {
+     font-family: "1543HumaneJenson";
+     font-size: 4em;
+     line-height: 135%;
+ }
+ /* de body krijgt een achtergrond die altijd meescrolt met de pagina de grote van de background en de margin(een spatie die het element omringt)*/
+ body {
+     background: url(images/background.svg) no-repeat center center fixed;
+     background-size: 250%;
+     margin: 0;
+ }
+ /*de spatie aan de linker kant en aan de bovenkant*/
+ .titel {
+     margin-left: 10%;
+     margin-top: 5%;
+ }
+ /* BRON: https://www.w3schools.com/howto/howto_css_timeline.asp */
+
+/* De streep van de tijdlijn met de lengen de positie ervan*/
+ .timeline {
+     margin: 0 auto;
+     max-width: 12em;
+     position: relative;
+ }
+
+ /* De echte streep van de tijdlijn met positie en kleur */
+ .timeline::after {
+     background-color: white;
+     bottom: 0;
+     content: '';
+     margin-top: 25%;
+     position: absolute;
+     top: 0;
+     width: 1em;
+ }
+
+ /* Ruimte tussen de containers/content*/
+ .container {
+     background-color: inherit;
+     padding: 1em 4em;
+     position: relative;
+     width: 70%;
+ }
+
+ /* Rondje van de timeline de positite en de kleur ervan */
+ .container::before {
+     background-color: white;
+     border: 4px solid #e8ddbc;
+     border-radius: 50%;
+     content: '';
+     height: 3em;
+     left: 0;
+     margin-left: -8%;
+     margin-top: 30%;
+     position: absolute;
+     width: 3em;
+     z-index: 1;
+ }
+
+/* content box de positie en de ruimte ervan */
+
+ .content {
+     background-color: whitesmoke;
+     border-radius: 6px;
+     margin-left: 3%;
+     margin-top: 35%;
+     opacity: 0.5;
+     padding: 2em 3em 2em 5em;
+     position: relative;
+     width: 70em;
+ }
+
+ /*  Design op TABLET formaat */
+ @media (max-device-width: 48em) and (min-device-width: 37.5em) {
+     nav>ul {
+         display: flex;
+         font-size: 5em;
+         list-style: none;
+         width: 20em;
+     }
+     nav>ul>li {
+         font-family: "Nexa Bold";
+         margin: 4%;
+         margin-top: 5%;
+     }
+     header {
+         background-color: white;
+         display: block;
+         display: flex;
+         justify-content: space-between;
+         width: 350%
+     }
+     header img {
+         margin-left: 2%;
+         width: 25%;
+     }
+     .titel {
+         margin-left: 55%;
+         margin-top: 5%;
+         width: 250%;
+     }
+     .content {
+         background-color: whitesmoke;
+         border-radius: 6px;
+         margin-left: 3%;
+         margin-top: 35%;
+         opacity: 0.5;
+         padding: 2em 3em 2em 5em;
+         position: relative;
+         width: 130em;
+     }
+     .h2 {
+         color: #48140d;
+         font-family: "1543HumaneJenson";
+         font-size: 8em;
+     }
+     p {
+         font-family: "1543HumaneJenson";
+         font-size: 6em;
+         line-height: 135%;
+     }
+ }
+
+
+ /* Design op DESKTOP formaat*/
+ @media (min-device-width: 48.1em) {
+     nav>ul {
+         display: flex;
+         font-size: 1em;
+         list-style: none;
+         margin-left: -10%;
+     }
+     nav>ul>li {
+         font-family: "Nexa Bold";
+         margin: 4%;
+         margin-top: 2%;
+     }
+     header {
+         background-color: white;
+         display: block;
+         display: flex;
+         justify-content: space-between;
+         width: 100%
+     }
+     header img {
+         margin-left: 5%;
+         width: 15%;
+     }
+
+     .titel {
+         margin-left: 5%;
+         margin-top: 5%;
+         width: 90%;
+     }
+     .content {
+         background-color: whitesmoke;
+         border-radius: 6px;
+         margin-left: -350%;
+         margin-top: 35%;
+         opacity: 0.5;
+         padding: 2em 3em 2em 5em;
+         position: relative;
+         width: 55em;
+     }
+     .timeline::after {
+         background-color: white;
+         content: '';
+         margin-left: -240%;
+         position: absolute;
+         width: 1em;
+     }
+     .container::before {
+         background-color: white;
+         border: 4px solid #e8ddbc;
+         border-radius: 50%;
+         content: '';
+         height: 3em;
+         left: 0;
+         margin-left: -182%;
+         margin-top: 17%;
+         position: absolute;
+         width: 3em;
+         z-index: 1;
+     }
+     .h2 {
+         color: #48140d;
+         font-family: "1543HumaneJenson";
+         font-size: 2em;
+     }
+     p {
+         font-family: "1543HumaneJenson";
+        font-size: 1.3em;
+         line-height: 135%;
+
+     }
+ }
