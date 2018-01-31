@@ -1,0 +1,43 @@
+Structuur van verhaal Alzheimer
+In de header zit het menu 
+Daaronder zijn er drie afbeelding, een van die afbeelding is het verhaal
+Helemaal onder is de progresbar 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Alzheimer.css" />
+    <title>Alzheimer</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/transavia-logo.svg" alt="transavia logo">
+        <nav>
+            <ul>
+                <li><a href="#">Profiel</a></li>
+                <li><a href="overzichtspagina.html">Leesbundel</a></li>
+                <li><a href="aanmelden.html">Aanmelden</a></li>
+            </ul>
+        </nav>
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+
+    </header>
+
+
+
+        <img class="kleurenhoofd" src="images/kleurenhoofd.svg" alt="hoofdicon">
+
+         <img class="zwarthoofd" src="images/zwarthoofd.svg" alt="hoofdicon">
+
+        <img class="artikel" src="images/alzheimer.svg" alt="verhaal over alzheimer">
+
+    <script src="alzheimer.js"></script>
+</body>
+
+</html>
