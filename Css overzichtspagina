@@ -1,0 +1,924 @@
+/* Achtergrond kleur van de hele pagina groen */
+
+html {
+    background-color: #00d66c;
+}
+
+
+/* Lettertype van de website */
+
+li,
+label,
+select {
+    font-family: "Nexa bold";
+}
+
+
+/* afstand van header tot de zijkant */
+
+body {
+    margin: 0;
+}
+
+
+/* Menu die in de header zit met een witte achtergrond. De elementen van nav word naast elkaar gezet*/
+
+header nav {
+    background-color: white;
+    display: flex;
+    width: 40em;
+}
+
+
+/* De ruimte tussen het logo en het menu  */
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: 52%;
+    margin-top: 5%;
+    width: 20em;
+}
+
+
+/* Ruimte tussen de menu items */
+
+nav ul li {
+    font-size: 2em;
+    margin-left: 13%;
+}
+
+
+/* Positie van het logo in de header */
+
+header .logo {
+    margin-left: 2%;
+    margin-top: 2%;
+    width: 25%;
+}
+
+
+/* De letteryp kleur van het menu */
+
+nav a {
+    color: #00d66c;
+}
+
+
+/* Zorgt er voor dat er geen streep onder de link te zien is */
+
+nav a:link {
+    text-decoration: none;
+}
+
+
+/* De kleur die je te zien krijgt als je over een link hovert uit het menu */
+
+a:hover {
+    color: #2c2f85;
+}
+
+
+/* header achtergrond kleur wit*/
+
+header {
+    background-color: white;
+}
+
+
+/* Titel van de website + de sijlen in positie ervan */
+
+h1 {
+    font-family: "Nexa bold";
+    font-size: 3.5em;
+    margin-bottom: 20%;
+    position: relative;
+    text-align: center;
+    top: -.5em;
+    z-index: 99;
+}
+
+
+/* Pijl van de header */
+
+.background {
+    margin: -30% 25% 1% 25%;
+    position: absolute;
+    width: 50%;
+}
+
+
+/* Overige titels: Aanbevolen verhaal en mijn lijst */
+
+h2 {
+    font-family: "Nexa bold";
+    font-size: 3rem;
+    margin-bottom: 1%;
+    margin-top: 3%;
+    padding: 0.5em;
+    text-align: center;
+}
+
+
+/* Aanbevolen verhaal - Achtergrond positie en kleur */
+
+.aanbevolen-article {
+    background-color: white;
+    border: none;
+    border-radius: .7em;
+    margin: 3% 2% 2% 2%;
+    padding-bottom: 2em;
+    position: relative;
+    width: 58em;
+}
+
+
+/* Positie van het logo die bij het gedeelte aanbevolen verhalen hoort.*/
+
+.logo {
+    margin-left: 75%;
+    position: absolute;
+    z-index: 99;
+}
+
+
+/* Mijn lijst - Achtergrond en positie en kleur*/
+
+.mijn-lijst {
+    background-color: white;
+    border: none;
+    border-radius: .8em;
+    margin: 3% 5% 5% 2%;
+    padding-bottom: 8em;
+    padding-top: 1em;
+    width: 58em;
+}
+
+
+/* Afbeeldingen van het eerste artikelen die in het gedeelte van mijn lijst zit*/
+
+.mijn-lijst img {
+    margin-left: 13%;
+    position: absolute;
+    width: 70%;
+}
+
+
+/* Afbeeldingen van het tweede artikelen die in het gedeelte van mijn lijst zit*/
+
+.mijn-lijst img:nth-child(2) {
+    margin-left: 13%;
+    margin-top: 32%;
+    position: absolute;
+    width: 70%;
+}
+
+
+/* Titel : Alle verhalen */
+
+h3 {
+    font-family: "Nexa bold";
+    font-size: 4em;
+}
+
+
+/* Gedeelte van alle verhalen - Kleur en positie */
+
+main {
+    background-color: white;
+    border-radius: .9em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 8% 3% 2% 3%;
+    padding-bottom: 5%;
+    padding-top: 2%;
+}
+
+
+/* Titels van de verhalen, hebben kleur transparant zodat screenreaders de titels wel kunnen voorlezen maar voor het design niet te zien omdat die een afbeelding heeft met de tekst erop */
+
+main article .h3 {
+    color: transparent;
+    font-family: "Nexa bold";
+    position: absolute;
+}
+
+
+/* Grote van de artikelen */
+
+article {
+    border: solid;
+    margin: 2%;
+    width: 50em;
+}
+
+
+/* Afbeelding van de verhalen met de titels erop */
+
+.verhalen-img {
+    width: 100%;
+}
+
+
+/* Meta data van de verhalen, die de meta data door de flex naast elkaar zet */
+
+.metadata {
+    display: flex;
+    font-size: 2.3em;
+    list-style: none;
+    margin-left: 2%;
+}
+
+
+/* Eerste item, het like icon met positie en afbeelding */
+
+footer li:nth-child(1) {
+    background-image: url(images/likes.png);
+    background-repeat: no-repeat;
+    background-size: 52%;
+    font-size: 1.3em;
+    padding: 1rem 1rem 1rem 5rem;
+}
+
+
+/* Tweede item, het comment icon met positie en afbeelding */
+
+footer li:nth-child(2) {
+    background-image: url(images/comments.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    font-size: 1.3em;
+    padding-bottom: 1rem;
+    padding-left: 5rem;
+    padding-top: 1rem;
+}
+
+
+/* Derde item, het lees icon met positie en afbeelding */
+
+footer li:nth-child(3) {
+    background-image: url(images/boek.png);
+    background-repeat: no-repeat;
+    background-size: 45%;
+    font-size: 1.3em;
+    padding-bottom: 1rem;
+    padding-left: 5rem;
+    padding-top: 1rem;
+}
+
+
+/* Ruimte tussen de meta data */
+
+.metadata> li {
+    margin: 5%;
+}
+
+
+/* De styling van de button voor de filter*/
+
+.filter-button {
+    background-color: #ff3268;
+    border-radius: 5.5rem;
+    box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+    color: white;
+    font-family: "Nexa bold";
+    margin-bottom: 1em;
+    margin-right: 41rem;
+    padding: 1rem 2rem 1rem 2rem;
+    position: relative;
+}
+
+
+/* Styling van alle buttons*/
+
+button {
+    background-color: #ff3268;
+    border-radius: 5.5rem;
+    box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+    color: white;
+    font-family: "Nexa bold";
+    font-size: 2.3em;
+    padding: 1em 1em 1em 1em;
+    position: relative;
+}
+
+
+/* De kleur die je krijgt als je met je muis over de button gaat*/
+
+button:hover {
+    opacity: 0.7;
+}
+
+
+/* Positie van de button "lezen" */
+
+.lezen {
+    margin-left: 41%;
+    margin-top: 45%;
+}
+
+
+/* Positie van de button "opslaan" */
+
+.opslaanbutton {
+    margin-bottom: 4%;
+    margin-left: 35%;
+}
+
+.nieuwebutton {
+    background-color: #2b2f86;
+    box-shadow: inset 0 -0.1875em 0.0625em #2b2f86;
+    color: white;
+    transition: background-color linear 2s;
+}
+
+
+/* Positie van de button "verder lezen" */
+
+.verderlezen {
+    margin-left: 45%;
+    margin-top: 15%;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 99;
+}
+
+.zoekbalk {
+    margin-right: -3%;
+    margin-top: 5%;
+    position: relative;
+    right: 0;
+    top: 3em;
+}
+
+
+/*BRON: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_anim_search */
+
+
+/* zoekbalk die 30% breed word als je erop drukt*/
+
+input[type=text]:focus {
+    width: 30%;
+}
+
+
+/* Styling van de zoekbalk*/
+
+input[type=text] {
+    background-color: #2c2f85;
+    background-image: url(images/zoekicon.png);
+    background-position: 0.5em;
+    background-repeat: no-repeat;
+    background-size: 4em;
+    border-radius: 1.5em;
+    font-family: "nexa bold";
+    font-size: 1.2em;
+    height: 3em;
+    margin-right: 1em;
+    padding-bottom: 0.5em;
+    padding-left: 5em;
+    right: 0;
+    transition: width 0.4s ease-in-out;
+    -webkit-transition: width 0.4s ease-in-out;
+    -moz-transition: width 0.4s ease-in-out;
+    -o-transition: width 0.4s ease-in-out;
+    width: .3em;
+}
+
+
+/* Achtergrond en positie en grote van de uitklap filter */
+
+#filter {
+    background-color: #eddac9;
+    border: none;
+    border-radius: .5em;
+    display: none;
+    margin-top: 1em;
+    width: 55em;
+}
+
+
+/* Geen rand om de legends*/
+
+fieldset {
+    border: none;
+}
+
+
+/* Positie en styling van de titels van de filterresultaten*/
+
+legend {
+    display: block;
+    font-family: "Nexa Bold";
+    font-size: 3em;
+    margin-left: 1em;
+}
+
+
+/* Positie van de keuzes waar de gebruiker op kan filteren */
+
+label {
+    display: flex;
+    font-family: "Nexa light";
+    font-size: 3em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+}
+
+
+/* Positie van checkbox*/
+
+input {
+    height: 10%;
+    margin-left: -5em;
+    margin-top: -10em;
+    position: absolute;
+    width: 5%;
+}
+
+
+/* Stijling van dropdown*/
+
+select {
+    background-color: #2c2f85;
+    color: white;
+    font-size: 1em;
+    width: 50%;
+}
+
+
+/* Positie van sorteer functie*/
+
+.sorteren {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+
+/* Positie van de zoekbutton die in de filter functie te vinden is*/
+
+fieldset button {
+    margin-left: 45%;
+}
+
+
+/* Positie en ruimte boven de titel van de filter functie*/
+
+div .h3 {
+    margin-left: 4%;
+    padding-top: 1em;
+}
+
+
+/*  Design op TABLET formaat */
+
+@media (max-device-width: 48em) and (min-device-width: 37.5em) {
+    header {
+        background-color: white;
+        width: 75em;
+    }
+    nav ul {
+        margin-left: 85%;
+    }
+    header .logo {
+        margin-left: 2%;
+        margin-top: 2%;
+        width: 25%;
+    }
+    .background {
+        margin-left: 32%;
+    }
+    .aanbevolen-article {
+        background-color: white;
+        border-radius: .7em;
+        margin-left: 4%;
+        padding-bottom: 2em;
+        position: relative;
+        width: 69em;
+    }
+    .logo {
+        margin-left: 89%;
+        position: absolute;
+        width: 25%;
+        z-index: 99;
+    }
+    .mijn-lijst {
+        background-color: white;
+        border-radius: .8em;
+        margin-left: 4%;
+        margin-right: 5%;
+        margin-top: 3%;
+        padding-top: 1em;
+        width: 69em;
+    }
+    .mijn-lijst img {
+        margin-left: 20%;
+        position: absolute;
+        width: 75%;
+    }
+    .mijn-lijst img:nth-child(2) {
+        margin-left: 20%;
+        margin-top: 35%;
+        position: absolute;
+        width: 75%;
+    }
+    main article {
+        width: 25em;
+    }
+    main {
+        background-color: white;
+        border-radius: .9em;
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 2%;
+        padding-bottom: 5%;
+        padding-top: 2%;
+        width: 70em;
+    }
+    main article {
+        width: 31em;
+    }
+    .metadata {
+        display: flex;
+        list-style: none;
+        margin-right: 5em;
+        width: 10%;
+    }
+    footer li:nth-child(1) {
+        background-repeat: no-repeat;
+        background-size: 45%;
+        padding-left: 1.3em;
+        padding-top: 0.5rem;
+    }
+    footer li:nth-child(2) {
+        background-repeat: no-repeat;
+        background-size: 55%;
+        padding-left: 1.3em;
+        padding-top: 0.5rem;
+    }
+    footer li:nth-child(3) {
+        background-repeat: no-repeat;
+        background-size: 45%;
+        padding-bottom: 1rem;
+        padding-left: 1.3em;
+        padding-top: 0.5rem;
+    }
+    .filter-button {
+        background-color: #ff3268;
+        border-radius: 5.5rem;
+        box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+        color: white;
+        font-family: "Nexa bold";
+        left: 1em;
+        margin-bottom: -1em;
+        margin-right: 58rem;
+        padding: 1rem 2rem 1rem 2rem;
+        position: relative;
+        top: 1em;
+    }
+    button {
+        background-color: #ff3268;
+        border-radius: 5.5rem;
+        box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+        color: white;
+        font-family: "Nexa bold";
+        font-size: 2.3em;
+        padding: 1em 1em 1em 1em;
+        position: relative;
+    }
+    .lezen {
+        font-size: 2.3em;
+        margin-left: 42%;
+        margin-top: 43%;
+        width: 5em;
+    }
+    .opslaanbutton {
+        font-size: 2em;
+        margin-bottom: 5%;
+        margin-left: 35%;
+        padding: 4%;
+    }
+    .verderlezen {
+        font: 2.3em;
+        height: 3em;
+        margin-left: 55%;
+        margin-top: 18%;
+        position: absolute;
+        width: 8em;
+        z-index: 99;
+    }
+    .zoekbalk {
+        margin-top: 13%;
+        position: relative;
+        right: 0;
+        top: 3em;
+    }
+    input[type=text]:focus {
+        width: 20%;
+    }
+    input[type=text] {
+        background-color: #2c2f85;
+        background-position: 0.5em;
+        background-repeat: no-repeat;
+        background-size: 5rem;
+        border-radius: 1.5rem;
+        font-family: "nexa bold";
+        font-size: 1.2em;
+        height: 3em;
+        margin-right: 5%;
+        padding-bottom: 0.5rem;
+        padding-left: 5rem;
+        padding-right: 1rem;
+        right: 0;
+        transition: width 0.4s ease-in-out;
+        -webkit-transition: width 0.4s ease-in-out;
+        -moz-transition: width 0.4s ease-in-out;
+        -o-transition: width 0.4s ease-in-out;
+        width: .3em;
+    }
+    .nieuwebutton {
+        background-color: #2b2f86;
+        box-shadow: inset 0 -0.1875em 0.0625em #2b2f86;
+        color: white;
+        margin-left: 4.8em;
+        transition: background-color linear 2s;
+    }
+}
+
+
+/* Design op LAPTOP formaat*/
+
+@media (min-device-width: 48.1em) {
+    body {
+        margin: 0;
+        width: 100%;
+    }
+    header nav {
+        background-color: white;
+        display: flex;
+        width: 40em;
+    }
+    nav ul {
+        display: flex;
+        list-style: none;
+        margin-top: 5%;
+        width: 20em;
+    }
+    nav ul li {
+        margin-left: 13%;
+    }
+    nav ul {
+        margin-left: 130%
+    }
+    header nav img {
+        margin-left: 3%;
+        width: 25%;
+    }
+    nav a {
+        color: #00d66c;
+        font-size: 0.6em;
+    }
+    nav a:link {
+        text-decoration: none;
+    }
+    a:hover {
+        color: #2c2f85;
+    }
+    .background {
+        margin-left: 30%;
+        margin-right: 25%;
+        margin-top: -29%;
+        position: absolute;
+        width: 40%;
+    }
+    .aanbevolen-article {
+        background-color: white;
+        border-radius: .7em;
+        margin-left: 47%;
+        margin-top: -8%;
+        padding-bottom: 2em;
+        position: absolute;
+        width: 50%;
+    }
+    .logo {
+        margin-left: 87%;
+        margin-top: -3%;
+        position: absolute;
+        width: 10%;
+        z-index: 99;
+    }
+    .mijn-lijst {
+        background-color: white;
+        border-radius: .8em;
+        height: 25em;
+        margin-left: 3%;
+        margin-top: -8%;
+        padding-bottom: 2em;
+        padding-top: 1em;
+        width: 35%;
+    }
+    .mijn-lijst img {
+        margin-left: 4em;
+        margin-right: 2em;
+        margin-top: 1em;
+        position: absolute;
+        width: 25%;
+    }
+    .mijn-lijst img:nth-child(2) {
+        margin-left: 4em;
+        margin-right: 2em;
+        margin-top: 10em;
+        position: absolute;
+        width: 25%;
+    }
+    main article {
+        width: 20em;
+    }
+    footer li:nth-child(3) {
+        background-repeat: no-repeat;
+        background-size: 50%;
+        padding-bottom: 1rem;
+        padding-left: 2rem;
+        padding-top: 0.5rem;
+    }
+    button {
+        background-color: #ff3268;
+        border-radius: 5.5rem;
+        box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+        color: white;
+        font-family: "Nexa bold";
+        font-size: 1em;
+        padding: 1rem 2rem 1rem 2rem;
+        position: relative;
+    }
+    .lezen {
+        margin-left: 41%;
+        margin-top: 5%;
+    }
+    .verderlezen {
+        margin-left: 18%;
+        margin-top: 6%;
+        position: absolute;
+        z-index: 99;
+    }
+    .lezen {
+        margin-left: 41%;
+        margin-top: 45%;
+    }
+    .filter-button {
+        background-color: #ff3268;
+        border-radius: 5.5rem;
+        box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+        color: white;
+        font-family: "Nexa bold";
+        font-size: 1.3em;
+        margin-bottom: 1em;
+        margin-right: 58rem;
+        padding: 1rem 2rem 1rem 2rem;
+        position: relative;
+        top: .5em;
+    }
+    .zoekbalk {
+        margin-right: -6.5%;
+        margin-top: -1.5%;
+        position: relative;
+        right: 0;
+        top: -1em;
+    }
+    input[type=text]:focus {
+        width: 20%;
+    }
+    input[type=text] {
+        background-color: #2c2f85;
+        background-position: 0.5em;
+        background-repeat: no-repeat;
+        background-size: 5rem;
+        border-radius: 1.5rem;
+        font-family: "nexa bold";
+        font-size: 1.2em;
+        margin-left: 5rem;
+        margin-right: 5%;
+        padding-bottom: 0.5rem;
+        padding-right: 1rem;
+        right: 0;
+        -webkit-transition: width 0.4s ease-in-out;
+        -moz-transition: width 0.4s ease-in-out;
+        -o-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+        width: .3em;
+    }
+    fieldset {
+        border: none;
+        display: flex;
+    }
+    legend {
+        display: block;
+        font-family: "Nexa Bold";
+        font-size: 1.2em;
+    }
+    label {
+        display: flex;
+        font-family: "Nexa light";
+        font-size: 1.2em;
+    }
+    input {
+        height: 10%;
+        margin-left: -2em;
+        margin-top: -3.3em;
+        position: absolute;
+        width: 5%;
+    }
+    select {
+        background-color: #2c2f85;
+        color: white;
+        font-size: 1em;
+        width: 50%;
+    }
+    .sorteren {
+        margin-bottom: 1em;
+        margin-left: 1em
+    }
+    fieldset button {
+        margin-left: 45%;
+    }
+    .nieuwebutton {
+        background-color: #2b2f86;
+        box-shadow: inset 0 -0.1875em 0.0625em #2b2f86;
+        color: white;
+        margin-left: 5.5em;
+        transition: background-color linear 2s;
+    }
+    .metadata {
+        display: flex;
+        font-size: 1em;
+        list-style: none;
+        margin-right: 5em;
+        width: 10%;
+    }
+    footer li:nth-child(1) {
+        background-repeat: no-repeat;
+        background-size: 40%;
+        padding-left: 2rem;
+        padding-top: 0.3rem;
+    }
+    footer li:nth-child(2) {
+        background-repeat: no-repeat;
+        background-size: 55%;
+        margin-right: 40%;
+        padding-left: 2rem;
+        padding-top: 0.3rem;
+    }
+    footer li:nth-child(3) {
+        background-repeat: no-repeat;
+        background-size: 50%;
+        padding-bottom: 1rem;
+        padding-left: 2rem;
+        padding-top: 0.3rem;
+    }
+}
+
+
+/* als de gebruiker opslaan drukt, word deze css toegevoegd. De button word langzaam een andere kleur en de lettertype word veranderd.*/
+
+.nieuwebutton {
+    background-color: #2b2f86;
+    box-shadow: inset 0 -0.1875em 0.0625em #2b2f86;
+    color: white;
+    transition: background-color linear 2s;
+}
+
+/*animatie pulse. Declratie een aantal eigenscahppen van de animatie pulse de grote van de pulse*/
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*animatie pulse. Declratie een aantal eigenscahppen van de animatie pulse. De tijd hoe snel de beweging van de pulse gaat. De webkit zorgt er voor dat het in andere browsers ook gezien kan worden*/
+.like-icon:active {
+    animation: pulse 0.6s 2 ease-out;
+    -webkit-animation: pulse 0.6s 2 ease-out;
+    -moz-animation: pulse 0.6s 2 ease-out;
+}
+
+
+/* De nieuwe class word aangeroepen uit de javascript. De animatie word 3 keer afgespeeld*/
+
+.newpulse {
+    -webkit-animation: pulse 1s ease infinite;
+    -moz-animation: pulse 1s ease infinite;
+    animation: pulse 1s ease infinite;
+    animation-iteration-count: 3;
+    -webkit-animation-iteration-count: 3;
+    -moz-animation-iteration-count: 3;
+}
+
+
