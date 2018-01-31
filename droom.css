@@ -1,0 +1,203 @@
+Structuur van het verhaal droom
+Het begint bij het menu en gaat verder daar verschillende filpcarts
+Daar onder komen de formaten van de Tablet en desktop.
+Helemaal onderin zijn de animaties
+
+
+
+/* De achtergrond kleur en het posistioneert de elementen erin naast elkaar*/
+
+header nav {
+	background-color: white;
+	display: flex;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+}
+
+nav ul li {
+	font-family: "Nexa Bold";
+	font-size: 0.8em;
+	margin-left: 7%;
+}
+
+nav img {
+	margin-left: 3%;
+	width: 25%
+}
+
+nav a {
+	color: #00d66c;
+}
+
+nav a:link {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #2c2f85;
+}
+
+
+/* Achtergrond kleur en de ruimte van de body, het zorgt er voor dat er geen ruimtes tussen de body en de header komt*/
+
+body {
+	background-color: black;
+	margin: 0;
+	padding: 0;
+	width: 99%;
+}
+
+
+/* BRON:https://www.youtube.com/watch?v=W3eJWpvIl0g */
+
+
+/* Flipcart afmetingen*/
+
+.flip3D {
+	height: 20em;
+	margin-top: 5%;
+	width: 100%;
+}
+
+
+/* Afmetingen van de voorkant van de flipcart */
+
+.flip3D > .front {
+	margin-left: 10%;
+	width: 80%;
+}
+
+
+/* Afmetingen van de achterkant van de flipcart */
+
+.flip3D > .back {
+	margin-left: 10%;
+	width: 80%;
+}
+
+
+/* Design TABLET formaat*/
+
+@media (max-device-width: 48em) and (min-device-width: 37.5em) {
+	nav ul li {
+		font-family: "Nexa Bold";
+		font-size: 1.3em;
+		margin-left: 20%;
+	}
+	/* Ipad */
+	.flip3D {
+		height: 40em;
+		margin-top: 5%;
+		width: 100%;
+	}
+	.flip3D > .front {
+		margin-left: 10%;
+		width: 80%;
+	}
+	.flip3D > .back {
+		margin-left: 10%;
+		width: 80%;
+	}
+}
+
+
+/*  Design DESKTOP formaat*/
+
+@media (min-device-width: 48.1em) {
+	header nav {
+		background-color: white;
+		display: flex;
+	}
+	nav ul {
+		display: flex;
+		list-style: none;
+		margin-left: 180%;
+	}
+	nav ul li {
+		font-family: "Nexa Bold";
+		font-size: 1em;
+		margin-left: 5%;
+	}
+	nav img {
+		margin-left: 3%;
+		width: 30%
+	}
+	.flip3D {
+		height: 35em;
+		width: 100%;
+	}
+	.flip3D > .front {
+		margin-left: 25%;
+		width: 42%;
+	}
+	.flip3D > .back {
+		margin-left: 25%;
+		width: 42%;
+	}
+	header {
+		background-color: white;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 2%;
+		width: 150%
+	}
+}
+
+
+/*BRON:https://www.youtube.com/watch?v=W3eJWpvIl0g*/
+
+.flip3D > .front {
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	-webkit-transform: perspective(500px) rotateY(0deg);
+	-webkit-transform: perspective(600px) rotateY(0deg);
+	-moz-transform: perspective(500px) rotateY(0deg);
+	-moz-transform: perspective(600px) rotateY(0deg);
+	-o-transform: perspective(500px) rotateY(0deg);
+	-o-transform: perspective(600px) rotateY(0deg);
+	-ms-transform: perspective(500px) rotateY(0deg);
+	-ms-transform: perspective(600px) rotateY(0deg);
+	transform: perspective(500px) rotateY(0deg);
+	transform: perspective(600px) rotateY(0deg);
+	transition: -webkit-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+}
+
+.flip3D > .back {
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	transform: perspective(600px) rotateY(180deg);
+	/*Zie je achterkant niet */
+	transition: transform .5s linear 0s;
+	transition: -webkit-transform .5s linear 0s;
+	/*Animatie tijd */
+}
+
+
+/* Als je hovert over de flipcard draait het 180 graden naar de achterkant* van de filpcartd */
+
+.flip3D:hover > .front {
+	-webkit-transform: perspective(600px) rotateY(-180deg);
+	-moz-transform: perspective(600px) rotateY(-180deg);
+	-o-transform: perspective(600px) rotateY(-180deg);
+	-ms-transform: perspective(600px) rotateY(-180deg);
+	transform: perspective(600px) rotateY(-180deg);
+}
+
+
+/* Als je hivert over de filcard draait het 180 graden naar de voorkant van de flipcard*/
+
+.flip3D:hover > .back {
+	-webkit-transform: perspective(600px) rotateY(0deg);
+	/*(Chrome, Safari, newer versions of Opera, almost all iOS browsers (including Firefox for iOS); basically, any WebKit based browser)*/
+	-moz-transform: perspective(600px) rotateY(0deg);
+	/*(firefox)*/
+	-o-transform: perspective(600px) rotateY(0deg);
+	/*Old, pre-Webkit,versions of Opera*/
+	-ms-transform: perspective(600px) rotateY(0deg);
+	/*(Internet Explore and Microsoft Edhe)*/
+	transform: perspective(600px) rotateY(0deg);
+}
