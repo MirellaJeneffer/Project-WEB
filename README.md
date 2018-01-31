@@ -222,8 +222,3 @@ De HTML is zo ingedeeld hoe de website er uit moet gaan zien. Van boven tot bene
 
 </html>
 
-Structuur van de Css : De structuur van de Css is het zelfde als de website. Wat boven aan is op de website is in de Css ook helemaal boven in genoteerd zodat als je aan het coderen bent alleen hoeft te kijken naar de website en je kan makkelijk de code terug vinden. verder heb ik alle code van de mobiele versie als eerst gedaan met comments en uitleg er bij daar onder heb ik het formaat van de tablet gemaakt en daar onder van desktop. 
-
-
-
-
