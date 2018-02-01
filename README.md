@@ -2,7 +2,12 @@
 
 Overzichtspagina verhalen website 
 Structuur van de HTML
-De HTML is zo ingedeeld hoe de website er uit moet gaan zien. Van boven tot benenden.
+Boven aan heb je het menu
+- Aanbevolen verhalen
+- Mijn lijst
+- Alle verhalen
+- filter en zoekfuntie
+
 
 <!DOCTYPE html>
 <html lang="en">
